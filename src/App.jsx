@@ -10,7 +10,7 @@ import { mockUsers, mockAssignments } from "./data/mockData";
 import StudentDashboard from "./pages/StudentDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 
-const STORAGE_KEY = "joineazy_assignments_v1";
+const STORAGE_KEY = "joineazy_assignments_v2";
 
 function App() {
   const [role, setRole] = useState("student");
