@@ -1,93 +1,104 @@
-Joineazy – Student & Professor Assignment Management
+# Joineazy – Student & Assignment Management Dashboard
 
-A responsive React-based assignment management dashboard built for the Joineazy Frontend Intern Round 2 assignment.
+A responsive role-based dashboard built for the Joineazy Frontend Intern Round 2 assignment. It helps students and professors manage courses, assignments, groups, and submission acknowledgements.
 
-Overview
+## Live Demo
 
-Joineazy provides separate workspaces for students and professors to manage courses, assignments, groups, and submission acknowledgements.
+https://joineazy-assignment-dashboard-self.vercel.app/
 
-This project uses browser LocalStorage to simulate persistent application data without requiring a backend server.
+## GitHub Repository
 
-Features
+https://github.com/utsavsingla113-web/joineazy-assignment-dashboard
 
-Student Workspace
+## Features
 
-- Student login and registration.
+### Student
+- Role-based student login.
 - View enrolled courses and assignments.
-- View assignment deadlines and submission status.
+- Check assignment descriptions, deadlines, and resource links.
+- Submit individual assignment acknowledgements.
 - Create and join course groups.
-- View group members and team leader.
-- Individual assignment acknowledgement.
-- Group assignment acknowledgement by the team leader.
-- Other group members can see who acknowledged the assignment and when.
+- Group leaders can acknowledge group assignments.
+- Group members can view acknowledgement details.
 
-Professor Workspace
-
-- Professor login and registration.
+### Professor
+- Professor dashboard with course overview.
 - Create and manage courses.
-- Enroll students in courses.
+- Enroll students into courses.
 - Create, edit, and delete assignments.
-- Configure deadlines and submission types.
-- Add assignment resource links.
-- Track individual and group acknowledgement progress.
+- Configure deadlines, resource links, and submission types.
+- View submission progress.
+- Track pending and completed submissions.
 
-Technology Stack
+## Technology Stack
 
 - React
-- JavaScript
 - Vite
+- JavaScript
 - Tailwind CSS
 - Lucide React
 - Browser LocalStorage
 
-Demo Credentials
+## Project Structure
 
-All demo accounts use the password: "123456"
+```text
+joineazy-assignment-dashboard/
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── data/
+│   │   ├── pages/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
+│
+└── README.md
+```
 
-Role| Email
-Student – Aarav Sharma| aarav@joineazy.demo
-Student – Priya Verma| priya@joineazy.demo
-Student – Rohan Mehta| rohan@joineazy.demo
-Student – Ananya Gupta| ananya@joineazy.demo
-Student – Kabir Singh| kabir@joineazy.demo
-Professor – Dr. Sharma| sharma@joineazy.demo
-Professor – Prof. Mehta| mehta@joineazy.demo
+## Run Locally
 
-Installation and Setup
+Make sure Node.js and npm are installed.
 
-git clone https://github.com/utsavsingla113-web/joineazy-assignment-dashboard.git
-cd joineazy-assignment-dashboard
+```bash
+cd frontend
 npm install
 npm run dev
+```
 
-Open the local URL displayed by Vite in your browser.
+Open the local URL displayed in your terminal.
 
-Group Acknowledgement Demo
+## Demo Accounts
 
-1. Log in as Priya Verma.
-2. Open the Data Structures group assignment.
-3. Observe that acknowledgement is pending.
-4. Log in as Aarav Sharma, the group leader.
-5. Open the same assignment and acknowledge it.
-6. Log in again as Priya Verma.
-7. Verify that the assignment displays the leader's name and acknowledgement timestamp.
+All demo accounts use the password `123456`.
 
-Data Persistence
+| Role | Email |
+|---|---|
+| Professor | sharma@joineazy.demo |
+| Professor | mehta@joineazy.demo |
+| Student | aarav@joineazy.demo |
+| Student | priya@joineazy.demo |
+| Student | rohan@joineazy.demo |
+| Student | ananya@joineazy.demo |
+| Student | kabir@joineazy.demo |
 
-The application uses LocalStorage to retain demo users, courses, assignments, groups, and acknowledgement records across page refreshes and login sessions.
+## Data Storage
 
-This is a frontend simulation. It does not use a production backend, database, or real authentication service.
+This project uses browser LocalStorage to simulate persistent application data and a role-based session.
 
-Deployment
+No production backend or external database is connected. Data is stored locally in the browser used for the demo.
 
-Live Demo: https://joineazy-assignment-dashboard-self.vercel.app/
+## Assignment Scope
 
-GitHub Repository: https://github.com/utsavsingla113-web/joineazy-assignment-dashboard
+This project was developed as a frontend implementation of the Joineazy Student, Group & Assignment Management task. It demonstrates role-based interfaces, assignment workflows, group acknowledgement, and responsive dashboard design.
 
-Developer
+## Developer
 
-Utsav Singla
+**Utsav Singla**
 
-GitHub: https://github.com/utsavsingla113-web
-
-LinkedIn: https://www.linkedin.com/in/utsav-singla-18b731384
+- GitHub: https://github.com/utsavsingla113-web
+- LinkedIn: https://www.linkedin.com/in/utsav-singla-18b731384
+-
